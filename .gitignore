@@ -60,6 +60,12 @@ _ReSharper*
 *.ncrunch*
 .*crunch*.local.xml
 
+# Binaries
+*.exe
+*.dll
+*.obj
+*.o
+
 # Installshield output folder 
 [Ee]xpress
 
