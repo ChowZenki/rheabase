@@ -10,6 +10,7 @@ namespace AccountServer
     {
         static void Main(string[] args)
         {
+            string s = Environment.CurrentDirectory;
             new AccountServer().Run();
         }
     }
