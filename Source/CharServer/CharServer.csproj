@@ -41,8 +41,10 @@
     <Reference Include="log4net">
       <HintPath>..\..\Lib\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,10 +52,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CharServer.cs" />
+    <Compile Include="InterServerService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AccountServer\AccountServer.csproj">
+      <Project>{2D9CF3CA-4EB8-414D-9683-74CC67413CF5}</Project>
+      <Name>AccountServer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CommonLib\CommonLib.csproj">
       <Project>{15f079c0-738e-452d-bf2e-6f4538e324f7}</Project>
       <Name>CommonLib</Name>

@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CharServer
+namespace CommonLib
 {
-    class Program
+    [ServiceContract]
+    public interface IInterServerService
     {
-        static void Main(string[] args)
-        {
-            new CharServer().Run();
-        }
     }
 }

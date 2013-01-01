@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CommonLib;
 
 namespace CharServer
 {
-    class Program
+    public class InterServerService : IInterServerService
     {
-        static void Main(string[] args)
-        {
-            new CharServer().Run();
-        }
     }
 }
